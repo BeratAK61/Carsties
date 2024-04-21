@@ -1,5 +1,8 @@
-﻿namespace Carsties.Auction.Entities;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
+namespace Carsties.Auction.Entities;
+
+[Table("Items")]
 public class Item
 {
     public Guid Id { get; set; }
