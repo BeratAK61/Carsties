@@ -30,4 +30,13 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+try
+{
+    DbInitializer.InitDb(app);
+}
+catch (Exception e)
+{
+    Console.WriteLine(e.ToString());
+}
+
 app.Run();
