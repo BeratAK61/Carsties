@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Carsties.Auction.DTOs;
 using Carsties.Auction.Entities;
+using Carsties.Contracts;
 
 namespace Carsties.Auction.RequestHelpers;
 
@@ -16,5 +17,10 @@ public class MappingProfiles : Profile
             .ForMember(d => d.Item, o => o.MapFrom(s => s));
 
         CreateMap<CreateAuctionDto, Item>();
+
+
+        CreateMap<AuctionDto, AuctionCreated>();
+
+        CreateMap<CreateAuctionDto, AuctionDto>();
     }
 }
