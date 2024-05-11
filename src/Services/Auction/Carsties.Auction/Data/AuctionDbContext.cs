@@ -1,4 +1,5 @@
 ﻿using Carsties.Auction.Entities;
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
 
 namespace Carsties.Auction.Data;
@@ -14,5 +15,13 @@ public class AuctionDbContext : DbContext
 
     //public DbSet<Item> Items { get; set; }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.AddInboxStateEntity();
+        modelBuilder.AddOutboxMessageEntity();
+        modelBuilder.AddOutboxStateEntity();
+    }
 
 }
