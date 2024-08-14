@@ -22,7 +22,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Carsties.Auction", "src\Ser
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{AEAC7AC1-F583-4E4A-9DF3-8A227CFAC8C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carsties.Contracts", "src\Shared\Carsties.Contracts\Carsties.Contracts.csproj", "{3419D017-DBDC-434A-BC2F-5BD483389E1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Carsties.Contracts", "src\Shared\Carsties.Contracts\Carsties.Contracts.csproj", "{3419D017-DBDC-434A-BC2F-5BD483389E1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityService", "IdentityService", "{B932F672-61BC-4D13-A889-CA3863470DDC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityService", "src\Services\IdentityService\IdentityService.csproj", "{2212C694-95DF-4799-9839-53EB2EF81611}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +46,10 @@ Global
 		{3419D017-DBDC-434A-BC2F-5BD483389E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3419D017-DBDC-434A-BC2F-5BD483389E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3419D017-DBDC-434A-BC2F-5BD483389E1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2212C694-95DF-4799-9839-53EB2EF81611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2212C694-95DF-4799-9839-53EB2EF81611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2212C694-95DF-4799-9839-53EB2EF81611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2212C694-95DF-4799-9839-53EB2EF81611}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +62,8 @@ Global
 		{504806CC-3092-4142-BBAF-9BE418123E1E} = {96A2EFCE-F461-427E-BC8A-321C24845519}
 		{AEAC7AC1-F583-4E4A-9DF3-8A227CFAC8C3} = {1BB342E8-C5D6-4262-BC04-F59693361FF0}
 		{3419D017-DBDC-434A-BC2F-5BD483389E1D} = {AEAC7AC1-F583-4E4A-9DF3-8A227CFAC8C3}
+		{B932F672-61BC-4D13-A889-CA3863470DDC} = {6501B547-D77C-4C5C-A3CC-9C6D38C481B3}
+		{2212C694-95DF-4799-9839-53EB2EF81611} = {B932F672-61BC-4D13-A889-CA3863470DDC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC59B56F-0CDB-4BEF-9505-5462048AFCC5}
